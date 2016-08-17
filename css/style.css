@@ -5,11 +5,123 @@ body {
 }
 h1 {
   font-size: 36px;
-  font-family: "Roboto", "Arial", serif;
   line-height: 36px;
 }
 h3 {
   font-size: 18px;
-  font-family: "Roboto", "Arial", serif;
   line-height: 30px;
+}
+.main-header {
+  margin-bottom: 60px;
+}
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.index-logo {
+  display: inline-block;
+  float: left;
+  margin-top: 27px;
+  margin-right: 180px;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-nav ul {
+  display: inline-block;
+  float: left;
+}
+.main-nav li {
+  display: inline-block;
+  margin-top: 51px;
+  margin-right: 40px;
+}
+.slide {
+  min-height: 300px;
+  margin-bottom: 75px;
+}
+.slide-text {
+  width: 380px;
+  display: inline-block;
+  float: left;
+  margin-top: 40px;
+  margin-right: 145px;
+}
+.lead {
+  min-height: 380px;
+  margin-bottom: 80px;
+}
+.gallery {
+  width: 340px;
+  display: inline-block;
+  float: left;
+}
+.lead div {
+  width: 240px;
+  display: inline-block;
+  float: left;
+  margin-right: 80px;
+}
+.lead div:last-child {
+  margin: 0;
+  float: right;
+}
+.about-us {
+  margin-bottom: 70px;
+}
+.about-us-left {
+  width: 580px;
+  display: inline-block;
+  float: left;
+  margin-right: 60px;
+}
+.about-us-rigth {
+  width: 240px;
+  display: inline-block;
+  float: right;
+}
+.friends div {
+  width: 230px;
+  display: inline-block;
+  float: left;
+  margin-right: 100px;
+}
+.friends div:last-child {
+  margin: 0;
+}
+.friends {
+  margin-bottom: 85px;
+}
+.map {
+  height: 416px;
+}
+.aside {
+  width: 250px;
+  display: inline-block;
+  float: left;
+}
+.social {
+  margin-top: 77px;
+}
+.social-left {
+  width: 240px;
+  display: inline-block;
+  float: left;
+  margin-right: 80px;
+}
+.social-left a {
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+}
+.social-left a:last-child {
+  margin: 0;
+}
+.social-right {
+  width: 550px;
+  display: inline-block;
+  float: right;
 }
