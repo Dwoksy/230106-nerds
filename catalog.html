@@ -8,69 +8,71 @@
   </head>
   <body>
   <header class="main-header">
-    <div class="index-logo">
-      <a href="index.html"><img src="img/logo-index.png" width="139" height="56"></a>
+    <div class="container clearfix">
+      <div class="index-logo">
+        <a href="index.html"><img src="img/logo-index.png" width="139" height="56"></a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li class="basket">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <ul>
-        <li>
-          <a href="#">Студия</a>
-        </li>
-        <li>
-          <a href="#">Клиенты</a>
-        </li>
-        <li>
-          <a href="#">Магазин</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-        <li class="basket">
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
-  <main class="container">
+  <main class="container clearfix">
     <div class="greeting">
       <h1>Добро пожаловать в магазин готовых макетов</h1>
     </div>
 
-    <div class="criteria">
+    <form class="criteria clearfix">
       <div class="value">
         <h3>Стоимость:</h3>
         <input type="range" step="1" max="15000" min="0">
         <p>От <span>0</span> до <span>15000</span></p>
       </div>
       <div class="grid">
-        <h3>Сетка</h3>
+        <h3>Сетка:</h3>
         <input type="radio" name="adaptive" id="adaptive">
-        <label for="adaptive">Адаптивная</label>
+        <label for="adaptive">Адаптивная</label><br>
         <input type="radio" name="fixed" id="fixed" checked>
-        <label for="fixed">Фиксированная</label>
+        <label for="fixed">Фиксированная</label><br>
         <input type="radio" name="Rubber" id="Rubber">
-        <label for="Rubber">Резиновая</label>
+        <label for="Rubber">Резиновая</label><br>
       </div>
       <div class="features">
         <h3>Особенности:</h3>
         <input type="checkbox" name="slide" id="slide" checked>
-        <label for="slide">Слайдер</label>
+        <label for="slide">Слайдер</label><br>
         <input type="checkbox" name="block" id="block">
-        <label for="block">Блок преимуществ</label>
+        <label for="block">Блок преимуществ</label><br>
         <input type="checkbox" name="news" id="news" checked>
-        <label for="news">Новости</label>
+        <label for="news">Новости</label><br>
         <input type="checkbox" name="features-gallery" id="features-gallery">
-        <label for="features-gallery">Галерея</label>
+        <label for="features-gallery">Галерея</label><br>
         <input type="checkbox" name="features-basket" id="features-basket">
-        <label for="features-basket">Корзина</label>
+        <label for="features-basket">Корзина</label><br>
       </div>
       <a type="btn" href="#">Показать</a>
-    </div>
+    </form>
 
-    <div class="container-right">
+    <div class="column-right clearfix">
       <div class="sorting">
-        <h4>Сортировка:</h4>
+        <h4>Сортировать:</h4>
         <a href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По функционалу</a>
@@ -85,7 +87,7 @@
       </div>
     </div>
 
-    <div class="pagination">
+    <div class="pagination clearfix">
       <ul>
         <li class="action"><a href="#">1</a></li>
         <li><a href="#">2</a></li>
@@ -105,14 +107,14 @@
           <a class="btn" href="#">Напишите нам</a>
         </div>
       </div>
-      <div class="social">
+      <div class="social clearfix">
         <div class="social-left">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-inst" href="#">Инст</a>
         </div>
         <div class="social-right">
-          <h2>Давайте дружить, это выгодно!</h2>
+          <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>

@@ -3,13 +3,25 @@ body {
   font-family: "roboto", "Arial", serif;
   line-height: 22px;
 }
-h1 {
+b {
   font-size: 36px;
   line-height: 36px;
+}
+h1 {
+  font-size: 40px;
+  line-height: normal;
+  text-transform: uppercase;
 }
 h3 {
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
+}
+h4 {
+  display: inline;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 .main-header {
   margin-bottom: 60px;
@@ -105,6 +117,7 @@ h3 {
 }
 .social {
   margin-top: 77px;
+  margin-bottom: 75px;
 }
 .social-left {
   width: 240px;
@@ -124,4 +137,62 @@ h3 {
   width: 550px;
   display: inline-block;
   float: right;
+  margin-top: -50px;
+  margin-left: 80px;
+}
+
+
+/* Каталог */
+
+
+.greeting {
+  text-align: center;
+  padding: 0 105px;
+  margin-bottom: 40px;
+  height: 245px;
+}
+.criteria {
+  display: inline-block;
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+.column-right {
+  display: inline-block;
+  float: right;
+}
+.sorting {
+  width: 560px;
+  margin: 20px 0;
+}
+.sorting h4 {
+  margin-right: 40px;
+}
+.sorting a {
+  margin-right: 45px;
+}
+.gallery {
+  width: 560px;
+  display: inline-block;
+  float: left;
+}
+.gallery a {
+  display: inline-block;
+  float: left;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+.gallery a:nth-child(2n+2) {
+  margin-right: 0px;
+}
+.pagination {
+  clear: both;
+  width: 285px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.pagination li {
+  display: inline-block;
+  width: 38px;
+  margin-right: 10px;
 }
