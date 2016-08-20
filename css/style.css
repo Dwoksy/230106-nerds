@@ -74,12 +74,11 @@ h4 {
 .lead div {
   width: 240px;
   display: inline-block;
-  float: left;
   margin-right: 80px;
+  vertical-align: top
 }
 .lead div:last-child {
-  margin: 0;
-  float: right;
+  margin: 0
 }
 .about-us {
   margin-bottom: 70px;
