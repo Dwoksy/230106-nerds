@@ -32,7 +32,6 @@ h4 {
   content: "";
 }
 .index-logo {
-  display: inline-block;
   float: left;
   margin-top: 27px;
   margin-right: 180px;
@@ -43,7 +42,6 @@ h4 {
   padding: 0 10px;
 }
 .main-nav ul {
-  display: inline-block;
   float: left;
 }
 .main-nav li {
@@ -57,7 +55,6 @@ h4 {
 }
 .slide-text {
   width: 380px;
-  display: inline-block;
   float: left;
   margin-top: 40px;
   margin-right: 145px;
@@ -68,14 +65,13 @@ h4 {
 }
 .gallery {
   width: 340px;
-  display: inline-block;
   float: left;
 }
 .lead div {
   width: 240px;
   display: inline-block;
   margin-right: 80px;
-  vertical-align: top
+  vertical-align: top;
 }
 .lead div:last-child {
   margin: 0
@@ -85,18 +81,15 @@ h4 {
 }
 .about-us-left {
   width: 580px;
-  display: inline-block;
   float: left;
   margin-right: 60px;
 }
 .about-us-rigth {
   width: 240px;
-  display: inline-block;
   float: right;
 }
 .friends div {
   width: 230px;
-  display: inline-block;
   float: left;
   margin-right: 100px;
 }
@@ -111,7 +104,6 @@ h4 {
 }
 .aside {
   width: 250px;
-  display: inline-block;
   float: left;
 }
 .social {
@@ -120,12 +112,10 @@ h4 {
 }
 .social-left {
   width: 240px;
-  display: inline-block;
   float: left;
   margin-right: 80px;
 }
 .social-left a {
-  display: inline-block;
   float: left;
   margin-right: 25px;
 }
@@ -134,7 +124,6 @@ h4 {
 }
 .social-right {
   width: 550px;
-  display: inline-block;
   float: right;
   margin-top: -50px;
   margin-left: 80px;
@@ -151,13 +140,11 @@ h4 {
   height: 245px;
 }
 .criteria {
-  display: inline-block;
   float: left;
   width: 240px;
   margin-right: 80px;
 }
 .column-right {
-  display: inline-block;
   float: right;
 }
 .sorting {
@@ -172,11 +159,9 @@ h4 {
 }
 .gallery {
   width: 560px;
-  display: inline-block;
   float: left;
 }
 .gallery a {
-  display: inline-block;
   float: left;
   margin-right: 80px;
   margin-bottom: 80px;
