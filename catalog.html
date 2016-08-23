@@ -19,17 +19,18 @@
           <li><a href="#">Клиенты</a></li>
           <li><a class="active" href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li><a class="basket" href="#">Корзина</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container clearfix">
+  <main class="clearfix">
     <div class="greeting">
       <h1>Добро пожаловать в магазин готовых макетов</h1>
     </div>
 
+  <div class="container">
     <form class="criteria clearfix">
       <div class="value">
         <h3>Стоимость:</h3>
@@ -38,11 +39,11 @@
       </div>
       <div class="grid">
         <h3>Сетка:</h3>
-        <input type="radio" name="adaptive" id="adaptive">
+        <input type="radio" name="grid" id="adaptive">
         <label for="adaptive">Адаптивная</label><br>
-        <input type="radio" name="fixed" id="fixed" checked>
+        <input type="radio" name="grid" id="fixed" checked>
         <label for="fixed">Фиксированная</label><br>
-        <input type="radio" name="Rubber" id="Rubber">
+        <input type="radio" name="grid" id="Rubber">
         <label for="Rubber">Резиновая</label><br>
       </div>
       <div class="features">
@@ -58,7 +59,7 @@
         <input type="checkbox" name="features-basket" id="features-basket">
         <label for="features-basket">Корзина</label><br>
       </div>
-      <a type="btn" href="#">Показать</a>
+      <a class="btn" href="#">Показать</a>
     </form>
 
     <div class="column-right clearfix">
@@ -80,22 +81,24 @@
 
     <div class="pagination clearfix">
       <ul>
-        <li class="action"><a href="#">1</a></li>
+        <li><a class="active" href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
+        <li><a class="next" href="#">Следующая</a></li>
       </ul>
     </div>
+  </div>
   </main>
 
   <footer class="main-footer">
     <div class="container">
       <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1471876059494" width="100%" height="417" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="aside">
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">Напишите нам</a>
+          <a class="btn-aside" href="#">Напишите нам</a>
         </div>
       </div>
       <div class="social clearfix">
@@ -105,7 +108,7 @@
           <a class="social-btn social-btn-inst" href="#">Инст</a>
         </div>
         <div class="social-right">
-          <b>Давайте дружить, это выгодно!</b>
+          <h4>Давайте дружить, это выгодно!</h4>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>

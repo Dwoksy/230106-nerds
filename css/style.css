@@ -274,6 +274,13 @@ h4 {
 .social-btn-inst {
   background-position: -8px -318px;
 }
+.social-btn:hover {
+  background-color: #fb565a;
+}
+.social-btn:active {
+  background-color: #d6494d;
+  box-shadow: inset 0 3px 0 0 #b63e42;
+}
 .social-left a:last-child {
   margin: 0;
 }
@@ -300,53 +307,99 @@ h4 {
 
 
 .greeting {
+  background: #eeeeee;
   text-align: center;
   padding: 0 105px;
   margin-bottom: 40px;
   height: 245px;
+}
+.greeting h1 {
+  margin: 0;
+  padding: 51px 450px;
 }
 .criteria {
   float: left;
   width: 240px;
   margin-right: 80px;
 }
+.criteria .value {
+  margin-bottom: 128px;
+}
+.criteria div.grid {
+  margin-bottom: 95px;
+}
 .column-right {
-  float: right;
+  float: left;
 }
 .sorting {
   width: 560px;
   margin: 20px 0;
 }
 .sorting h4 {
-  margin-right: 40px;
+  margin-right: 27px;
 }
 .sorting a {
-  margin-right: 45px;
+  color: #b2b2b2;
+  margin-right: 37px;
+  border-bottom: 1px dotted #00ca74;
+}
+.sorting a:hover {
+  color: #444444;
+  border-bottom: 1px solid #00ca74;
+}
+.sorting a:active {
+  color: #444444;
+  border-bottom: none;
 }
 .column-right .gallery {
   width: 560px;
-  float: left;
 }
 .column-right .gallery a {
-  float: left;
-  margin-right: 80px;
-  margin-bottom: 80px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  margin-right: 76px;
+  margin-bottom: 75px;
 }
 .column-right .gallery a:nth-child(2n) {
   margin-right: 0px;
 }
 .pagination {
   clear: both;
-  width: 285px;
+  width: 340px;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 }
 .pagination li {
   display: inline-block;
-  width: 38px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
-
+.pagination li:last-child{
+  margin-right: 0;
+}
+.pagination a {
+  display: inline-block;
+  padding: 8px 13px;
+  border: 2px solid #f2f2f2;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  vertical-align: top;
+  color: #000000;
+}
+.pagination a:hover {
+  border: 2px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+.pagination a:active {
+  border: 2px solid #d5d5d5;
+  background-color: #d5d5d5;
+}
+.pagination a.active {
+  background-color: #ffffff;
+}
+.pagination a.next {
+  padding: 8px 26px;
+}
 
 /* кнопки */
 
@@ -407,4 +460,12 @@ h4 {
   margin-top: 7px;
   margin-left: 3px;
   margin-bottom: 26px;
+}
+form a.btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 145px;
+  background-color: #f1f1f1;
+  color: #000000;
+  padding: 10px 45px;
 }
