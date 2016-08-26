@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 15px;
-  font-family: "Roboto Medium Regular", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   line-height: 22px;
   background: #ffffff;
   color: #283136;
@@ -70,13 +70,13 @@ h4 {
 .main-nav li:last-child {
   margin-right: 0;
 }
-.main-nav a.basket {
+.main-nav .basket {
   position: relative;
   margin-top: 30px;
   padding-top: 23px;
   padding-left: 48px;
 }
-.main-nav a.basket::before {
+.main-nav .basket::before {
   content: "";
   position: absolute;
   top: 23px;
@@ -88,11 +88,11 @@ h4 {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -30px -30px;
 }
-.main-nav a.basket:hover::before {
+.main-nav .basket:hover::before {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -30px -180px;
 }
-.main-nav a.basket:active::before {
+.main-nav .basket:active::before {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -30px -105px;
 }
@@ -111,27 +111,107 @@ h4 {
 .main-nav a.active {
   border-bottom: 2px solid #fb565a;
 }
+.slide-bg {
+  margin-bottom: 107px;
+  background: #eeeeee;
+}
+.slider {
+  position: relative;
+
+  width: 880px;
+  min-height: 310px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 .slide {
-  min-height: 300px;
-  margin-bottom: 81px;
-  background-color: #eeeeee;
+  position: absolute;
+  top: 27px;
+  left: 0;
+
+  width: 99%;
+  height: 310px;
+
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+
+  -webkit-transition: left 0.3s ease;
+     -moz-transition: left 0.3s ease;
+          transition: left 0.3s ease;
+}
+.slider input[type="radio"] {
+  display: none;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 55px;
+  left: 48%;
+  z-index: 10;
+
+  width: 200px;
+  margin-left: -100px;
+
+  text-align: center;
+}
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+
+  vertical-align: top;
+
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .slide-text {
-  width: 380px;
-  float: left;
-  margin-top: 59px;
-  margin-right: 122px;
-  padding: 0;
+  width: 500px;
+  padding: 31px 0;
 }
-.slide-text p {
-  margin: 0;
-  margin-bottom: 26px;
-  margin-top: 17px;
-  font-weight: bold;
+.slide p {
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
 }
-.gallery {
-  width: 338px;
-  float: left;
+.slide:nth-child(1) {
+  background-image: url("../img/slide-1.png");
+}
+.slide:nth-child(2) {
+  background-image: url("../img/slide-2.png");
+}
+.slide:nth-child(3) {
+  background-image: url("../img/slide-3.png");
+}
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  left: 0;
+}
+#btn-1:checked ~ .slides .slide:nth-child(2),
+#btn-1:checked ~ .slides .slide:nth-child(3) {
+  left: 880px;
+}
+#btn-2:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  left: 0;
+}
+#btn-2:checked ~ .slides .slide:nth-child(3) {
+  left: -880px;
+}
+#btn-3:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
+}
+#btn-3:checked ~ .slides .slide:nth-child(2) {
+  left: -880px;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  left: 0;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
 }
 .lead {
   min-height: 380px;
@@ -193,16 +273,16 @@ h4 {
   width: 230px;
   margin-right: 84px;
 }
-.friends div .Glukhanko img {
+.Glukhanko img {
   padding-top: 67px;
   padding-left: 12px;
   padding-bottom: 56px;
 }
-.friends div .Html img {
+.Html img {
   padding-top: 55px;
   padding-left: 12px;
 }
-.friends div .Shop img {
+.Shop img {
   padding-top: 45px;
   padding-left: 16px;
 }
@@ -403,17 +483,26 @@ h4 {
 
 /* кнопки */
 
-.btn-slide {
-  display: inline-block;
-  background-color: #fb565a;
+.slide .btn {
+  display: block;
+  width: 220px;
+  margin-top: 29px;
+  padding: 10px 10px;
+
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #fb565a;
   border-radius: 3px;
-  padding: 10px 70px;
-  margin-bottom: 80px;
 }
-.btn-slide:hover {
+.slide .btn:hover {
   background-color: #d6494d;
 }
-.btn-slide:active {
+.slide .btn:active {
   background-color: #b63538;
   box-shadow: inset 0 3px 0 0 #9b2d30;
 }
@@ -461,7 +550,7 @@ h4 {
   margin-left: 3px;
   margin-bottom: 26px;
 }
-form a.btn {
+form .btn {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 145px;
