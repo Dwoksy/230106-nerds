@@ -80,27 +80,54 @@
         <a href="#">По функционалу</a>
       </div>
       <div class="gallery">
-        <a href="#"><img src="img/shop-item-1.png" width="240" height="270"></a>
-        <a href="#"><img src="img/shop-item-2.png" width="240" height="270"></a>
-        <a href="#"><img src="img/shop-item-3.png" width="240" height="270"></a>
-        <a href="#"><img src="img/shop-item-4.png" width="240" height="270"></a>
-        <a href="#"><img src="img/shop-item-5.png" width="240" height="270"></a>
-        <a href="#"><img src="img/shop-item-6.png" width="240" height="270"></a>
-      </div>
-      <div class="price-1">
-      </div>
-      <div class="price-2">
-        <a href="#">Sunset</a>
-        <p> Интернет-магазин с личным кабинетом</p>
-        <a class="buy">10000 Р.</a>
-      </div>
-      <div class="price-3">
-      </div>
-      <div class="price-4">
-      </div>
-      <div class="price-5">
-      </div>
-      <div class="price-6">
+        <div class="photo">
+          <a href="#"><img src="img/shop-item-1.png" width="240" height="270"></a>
+          <div class="price">
+            <a href="#">Aviator</a>
+            <p> Одностраничный макет с авторским дизайном</p>
+            <a class="buy">8000 Р.</a>
+          </div>
+        </div>
+        <div class="photo">
+          <a href="#"><img src="img/shop-item-2.png" width="240" height="270"></a>
+          <div class="price">
+            <a href="#">Sunset</a>
+            <p> Интернет-магазин<br>с личным кабинетом</p>
+            <a class="buy">10000 Р.</a>
+          </div>
+        </div>
+        <div class="photo">
+          <a href="#"><img src="img/shop-item-3.png" width="240" height="270"></a>
+          <div class="price">
+            <a href="#">Forte</a>
+            <p> Отличный макет<br>для личного блога</p>
+            <a class="buy">5000 Р.</a>
+          </div>
+        </div>
+        <div class="photo">
+          <a href="#"><img src="img/shop-item-4.png" width="240" height="270"></a>
+          <div class="price">
+            <a href="#">Modern organic thai</a>
+            <p> Сайт для ресторана<br>быстрого питания</p>
+            <a class="buy">12000 Р.</a>
+          </div>
+        </div>
+        <div class="photo">
+          <a href="#"><img src="img/shop-item-5.png" width="240" height="270"></a>
+          <div class="price">
+            <a href="#">Avenue</a>
+            <p> Макет для блога<br>о путешествиях</p>
+            <a class="buy">8000 Р.</a>
+          </div>
+        </div>
+        <div class="photo">
+          <a href="#"><img src="img/shop-item-6.png" width="240" height="270"></a>
+          <div class="price">
+            <a href="#">Dovetail</a>
+            <p> Интернет-магазин<br>с галереей товаров</p>
+            <a class="buy">14000 Р.</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -139,5 +166,36 @@
       </div>
     </div>
   </footer>
+
+  <div class="write-us">
+    <button class="write-us-close" type="button" title="Закрыть">Закрыть</button>
+    <form method="post">
+      <label for="name">Ваше имя:
+      <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="name"></label>
+      <label for="e-mail">Ваш e-mail:
+      <input type="text" placeholder="Для отправки ответа" name="e-mail" id="e-mail"></label>
+      <label for="letter">Текст письма:
+      <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea></label>
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+
+  <script>
+    var link = document.querySelector(".btn-aside");
+    var popup = document.querySelector(".write-us");
+    var close = document.querySelector(".write-us-close");
+    var login = popup.querySelector("[name=name]");
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("write-us-show");
+      login.focus();
+    });
+
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.remove("write-us-show");
+    });
+  </script>
   </body>
 </html>
