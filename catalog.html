@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Каталог</title>
   </head>
@@ -31,30 +30,30 @@
     </div>
 
   <div class="container">
-    <form class="criteria clearfix" action="form.php" method="post">
+    <form class="criteria clearfix" method="post">
       <h3>Стоимость:</h3>
       <div class="range-filter">
         <div class="range-controls">
           <div class="scale">
-            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            <div class="bar" width: 75%></div>
           </div>
           <div class="toggle toggle-min"></div>
           <div class="toggle toggle-max"></div>
         </div>
         <div class="price-controls">
-          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          <label class="min-price"><span>от</span> <input name="min-price" type="text" value="0"></label>
+          <label class="max-price"><span>до</span> <input name="max-price" type="text" value="15000"></label>
         </div>
       </div>
 
       <div class="grid">
         <h3>Сетка:</h3>
-        <input type="radio" name="grid" id="adaptive">
-        <label for="adaptive">Адаптивная</label><br>
-        <input type="radio" name="grid" id="fixed" checked>
-        <label for="fixed">Фиксированная</label><br>
+        <input type="radio" name="grid" id="adaptive" checked>
+        <label for="adaptive">Адаптивная</label>
+        <input type="radio" name="grid" id="fixed">
+        <label for="fixed">Фиксированная</label>
         <input type="radio" name="grid" id="Rubber">
-        <label for="Rubber">Резиновая</label><br>
+        <label for="Rubber">Резиновая</label>
       </div>
       <div class="features">
         <h3>Особенности:</h3>
@@ -78,6 +77,8 @@
         <a href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По функционалу</a>
+        <a class="arrow-up" href="#">Вверх</a>
+        <a class="arrow-down" href="#">Ввниз</a>
       </div>
       <div class="gallery">
         <div class="photo">
@@ -85,7 +86,7 @@
           <div class="price">
             <a href="#">Aviator</a>
             <p> Одностраничный макет с авторским дизайном</p>
-            <a class="buy">8000 Р.</a>
+            <a class="buy" href="#">8000 Р.</a>
           </div>
         </div>
         <div class="photo">
@@ -93,7 +94,7 @@
           <div class="price">
             <a href="#">Sunset</a>
             <p> Интернет-магазин<br>с личным кабинетом</p>
-            <a class="buy">10000 Р.</a>
+            <a class="buy" href="#">10000 Р.</a>
           </div>
         </div>
         <div class="photo">
@@ -101,7 +102,7 @@
           <div class="price">
             <a href="#">Forte</a>
             <p> Отличный макет<br>для личного блога</p>
-            <a class="buy">5000 Р.</a>
+            <a class="buy" href="#">5000 Р.</a>
           </div>
         </div>
         <div class="photo">
@@ -109,7 +110,7 @@
           <div class="price">
             <a href="#">Modern organic thai</a>
             <p> Сайт для ресторана<br>быстрого питания</p>
-            <a class="buy">12000 Р.</a>
+            <a class="buy" href="#">12000 Р.</a>
           </div>
         </div>
         <div class="photo">
@@ -117,7 +118,7 @@
           <div class="price">
             <a href="#">Avenue</a>
             <p> Макет для блога<br>о путешествиях</p>
-            <a class="buy">8000 Р.</a>
+            <a class="buy" href="#">8000 Р.</a>
           </div>
         </div>
         <div class="photo">
@@ -125,7 +126,7 @@
           <div class="price">
             <a href="#">Dovetail</a>
             <p> Интернет-магазин<br>с галереей товаров</p>
-            <a class="buy">14000 Р.</a>
+            <a class="buy" href="#">14000 Р.</a>
           </div>
         </div>
       </div>
@@ -143,8 +144,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1471876059494" width="100%" height="417" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div id="map">
       <div class="aside">
         <h3>Nёrds design studio</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -180,22 +180,7 @@
     </form>
   </div>
 
-  <script>
-    var link = document.querySelector(".btn-aside");
-    var popup = document.querySelector(".write-us");
-    var close = document.querySelector(".write-us-close");
-    var login = popup.querySelector("[name=name]");
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.add("write-us-show");
-      login.focus();
-    });
-
-    close.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.remove("write-us-show");
-    });
-  </script>
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>
