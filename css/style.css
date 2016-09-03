@@ -159,7 +159,7 @@ h4 {
 .index-logo {
   float: left;
   margin-top: 27px;
-  margin-right: 183px;
+  margin-right: 188px;
 }
 .index-logo img {
   background-color: #eff1f2;
@@ -177,8 +177,11 @@ h4 {
 }
 .main-nav li {
   display: inline-block;
+  margin: 0;
+  padding: 0;
   margin-top: 53px;
-  margin-right: 38px;
+  margin-right: 45px;
+  margin-left: -5px;
   vertical-align: top;
 
 }
@@ -189,13 +192,13 @@ h4 {
   position: relative;
   margin-top: 30px;
   padding-top: 23px;
-  padding-left: 48px;
+  padding-left: 54px;
 }
 .main-nav .basket::before {
   content: "";
   position: absolute;
   top: 23px;
-  left: 20px;
+  left: 26px;
 
   width: 15px;
   height: 15px;
@@ -227,15 +230,16 @@ h4 {
   border-bottom: 2px solid #fb565a;
 }
 .slide-bg {
-  margin-bottom: 107px;
+  margin-bottom: 80px;
   background: #eeeeee;
 }
 .slider {
   position: relative;
 
   width: 880px;
-  min-height: 310px;
-  margin: 0 auto;
+  min-height: 337px;
+  margin: 0 501px;
+  margin-right: 490px;
   overflow: hidden;
 }
 .slide {
@@ -243,22 +247,22 @@ h4 {
   top: 27px;
   left: 0;
 
-  width: 99%;
+  width: 100%;
   height: 310px;
 
   background-repeat: no-repeat;
-  background-position: 100% 10px;
+  background-position: 542px 10px;
 }
 .slider input[type="radio"] {
   display: none;
 }
 .slider-controls {
   position: absolute;
-  bottom: 55px;
-  left: 48%;
+  bottom: 82px;
+  left: 49%;
   z-index: 10;
 
-  width: 200px;
+  width: 199px;
   margin-left: -100px;
 
   text-align: center;
@@ -281,9 +285,14 @@ h4 {
   padding: 31px 0;
 }
 .slide p {
+  font-size: 16px;
   font-weight: bold;
   line-height: 22px;
   color: #283136;
+}
+.slide b {
+  display: block;
+  margin-bottom: 18px;
 }
 .slide:nth-child(1) {
   background-image: url("../img/slide-1.png");
@@ -337,6 +346,9 @@ h4 {
 .lead div:last-child {
   margin: 0;
 }
+.lead h3 {
+  margin-top: 18px;
+}
 .lead p {
   margin: 0;
   margin-top: 13px;
@@ -355,8 +367,14 @@ h4 {
 .about-us {
   margin-bottom: 47px;
 }
+.about-us p {
+  font-size: 16px;
+  line-height: 22px;
+}
 .about-us h3{
-  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 22px;
 }
 .about-us ul {
   padding: 0px;
@@ -365,7 +383,7 @@ h4 {
   position: relative;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 37px;
+  padding-left: 35px;
   margin-bottom: 22px;
   list-style: none;
   font-weight: bold;
@@ -387,7 +405,7 @@ h4 {
 }
 .about-us-left p{
   margin-top: 19px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   font-weight: bold;
 }
 .about-us-right {
@@ -395,7 +413,7 @@ h4 {
   float: left;
 }
 .about-us-right img {
-  margin-bottom: 41px;
+  margin-bottom: 47px;
 }
 .friends div {
   display: inline-block;
@@ -646,10 +664,13 @@ h4 {
   font-size: 35px;
   line-height: 36px;
   text-transform: none;
+  letter-spacing: .6px;
 }
 .social-right p {
+  font-size: 16px;
+  line-height: 22px;
   margin: 0;
-  margin-top: 7px;
+  margin-top: 10px;
   font-weight: bold;
 }
 
@@ -661,12 +682,15 @@ h4 {
   background: #eeeeee;
   text-align: center;
   padding: 0;
-  margin-bottom: 40px;
-  height: 245px;
+  margin-bottom: 56px;
+  height: 229px;
 }
 .greeting h1 {
+  font-size: 40px;
   margin: 0;
-  padding: 45px 0;
+  letter-spacing: -0.3px;
+  margin-left: -32px;
+  padding: 48px 0;
 }
 form {
   font: inherit;
@@ -831,7 +855,7 @@ input[type="checkbox"]:not(checked) + label::before {
 }
 .sorting a {
   color: #b2b2b2;
-  margin-right: 37px;
+  margin-right: 40px;
   border-bottom: 1px dotted #00ca74;
 }
 .sorting a:hover {
@@ -851,7 +875,7 @@ input[type="checkbox"]:not(checked) + label::before {
   content: "";
   position: absolute;
   top: -10px;
-  left: 76px;
+  left: 60px;
   width: 11px;
   height: 10px;
   background: url("../img/icon-down-dir.png")
@@ -860,7 +884,7 @@ input[type="checkbox"]:not(checked) + label::before {
   content: "";
   position: absolute;
   top: -10px;
-  left: 52px;
+  left: 33px;
   width: 11px;
   height: 10px;
   background: url("../img/icon-up-dir.png")
@@ -875,6 +899,40 @@ input[type="checkbox"]:not(checked) + label::before {
   margin: 0;
   margin-right: 76px;
   margin-bottom: 75px;
+  border-top: 30px solid #f1f1f1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.gallery .photo:hover {
+  border-top-color: #797979;
+
+  -webkit-transition: 0.3s ease;
+     -moz-transition: 0.3s ease;
+          transition: 0.3s ease;
+}
+.photo .dot {
+  position: absolute;
+  top: -19px;
+  left: 105px;
+  z-index: 10;
+
+  width: 60px;
+  margin-left: -100px;
+
+  text-align: center;
+}
+.dot label {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 2px;
+
+  vertical-align: top;
+
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .gallery .photo:nth-child(2n) {
   margin-right: 0px;
@@ -882,8 +940,8 @@ input[type="checkbox"]:not(checked) + label::before {
 .price {
   display: none;
   position: absolute;
-  top: 50px;
-  right: 21px;
+  top: 21px;
+  right: 19px;
   height: 200px;
   width: 200px;
   background-color: #ffffff;
@@ -962,8 +1020,8 @@ input[type="checkbox"]:not(checked) + label::before {
 .pagination a.active {
   background-color: #ffffff;
 }
-.pagination a.next {
-  padding: 8px 26px;
+.pagination .next {
+  padding: 8px 29px;
 }
 
 /* кнопки */
@@ -971,7 +1029,7 @@ input[type="checkbox"]:not(checked) + label::before {
 .slide .btn {
   display: block;
   width: 220px;
-  margin-top: 29px;
+  margin-top: 26px;
   padding: 10px 10px;
 
   font-weight: 300;
@@ -1002,7 +1060,7 @@ input[type="checkbox"]:not(checked) + label::before {
 .btn {
   display: inline-block;
   border-radius: 3px;
-  padding: 10px 41px;
+  padding: 9px 39px;
 }
 .red {
   background-color: #fb565a;
@@ -1089,6 +1147,12 @@ form .btn {
   background-color: #f1f1f1;
   color: #000000;
   padding: 10px 47px;
+}
+form .btn:hover {
+  background-color: #e5e5e5;
+}
+form .btn:active {
+  background-color: #d5d5d5;
 }
 .buy {
   font-size: 18px;
