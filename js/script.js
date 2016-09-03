@@ -12,6 +12,10 @@ link.addEventListener("click", function(event) {
 close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("write-us-show");
+  popup.classList.add("close");
+  setTimeout(function() {
+     popup.classList.remove("close");
+   }, 600);
 });
 
 window.addEventListener("keydown", function(event) {
@@ -34,15 +38,15 @@ function init(){
         controls: []
     });
 
-    myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable("scrollZoom");
 
     myMap.controls.add("zoomControl", {
         position: {top: 15, left: 15}
     });
 
     var myPlacemark = new ymaps.Placemark([59.93863106417266,30.3230545] , {},
-        { iconLayout: 'default#image',
-          iconImageHref: 'http://s019.radikal.ru/i638/1609/28/5e0efbede5f0.png',
+        { iconLayout: "default#image",
+          iconImageHref: "http://s019.radikal.ru/i638/1609/28/5e0efbede5f0.png",
           iconImageSize: [231, 190],
           iconImageOffset: [-50, -190] });
 
