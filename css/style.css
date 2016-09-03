@@ -932,7 +932,7 @@ input[type="checkbox"]:not(checked) + label::before {
   background: #ffffff;
   border: 3px solid white;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: default;
 }
 .gallery .photo:nth-child(2n) {
   margin-right: 0px;
