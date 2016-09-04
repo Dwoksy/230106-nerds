@@ -236,10 +236,9 @@ h4 {
 .slider {
   position: relative;
 
-  width: 880px;
+  width: 900px;
   min-height: 337px;
-  margin: 0 501px;
-  margin-right: 490px;
+  margin: 0 auto;
   overflow: hidden;
 }
 .slide {
@@ -251,7 +250,7 @@ h4 {
   height: 310px;
 
   background-repeat: no-repeat;
-  background-position: 542px 10px;
+  background-position: 541px 10px;
 }
 .slider input[type="radio"] {
   display: none;
@@ -259,10 +258,10 @@ h4 {
 .slider-controls {
   position: absolute;
   bottom: 82px;
-  left: 49%;
+  left: 48%;
   z-index: 10;
 
-  width: 199px;
+  width: 196px;
   margin-left: -100px;
 
   text-align: center;
@@ -308,7 +307,7 @@ h4 {
 }
 #btn-1:checked ~ .slides .slide:nth-child(2),
 #btn-1:checked ~ .slides .slide:nth-child(3) {
-  left: 880px;
+  left: 900px;
 }
 #btn-2:checked ~ .slides .slide:nth-child(1) {
   left: -880px;
@@ -470,8 +469,8 @@ h4 {
 }
 .aside {
   position: absolute;
-  top: 97px;
-  left: 223px;
+  top: 91px;
+  left: 501px;
 
   background-color: #ffffff;
   font-size: 16px;
@@ -479,11 +478,13 @@ h4 {
   font-weight: bold;
   padding-left: 20px;
 
-  width: 250px;
+  width: 229px;
+  height: 239px;
   z-index: 10;
 }
 .aside h3 {
   font-size: 16px;
+  padding-top: 7px;
 }
 .aside p {
   margin-top: 12px;
