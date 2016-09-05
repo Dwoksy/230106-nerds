@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Каталог</title>
   </head>
   <body>
   <header class="main-header clearfix">
     <div class="container clearfix">
       <div class="index-logo">
-        <a href="index.html"><img src="img/logo-index.png" width="139" height="56"></a>
+        <a href="index.html"><img src="img/logo-index.png" width="139" height="56" alt="Нёрдс"></a>
       </div>
       <nav class="main-nav">
         <ul>
@@ -24,18 +24,19 @@
     </div>
   </header>
 
-  <main class="clearfix">
+  <main class="catalog-main">
     <div class="greeting">
         <h1>Добро пожаловать в магазин<br> готовых макетов</h1>
     </div>
 
   <div class="container">
-    <form class="criteria clearfix" method="post">
+    <div class="clearfix">
+    <form class="criteria" method="post">
       <h3>Стоимость:</h3>
       <div class="range-filter">
         <div class="range-controls">
           <div class="scale">
-            <div class="bar" width: 75%></div>
+            <div class="bar"></div>
           </div>
           <div class="toggle toggle-min"></div>
           <div class="toggle toggle-max"></div>
@@ -71,7 +72,7 @@
       <a class="btn" href="#">Показать</a>
     </form>
 
-    <div class="column-right clearfix">
+    <div class="column-right">
       <div class="sorting">
         <h4>Сортировать:</h4>
         <a href="#">По цене</a>
@@ -83,15 +84,15 @@
       <div class="gallery">
         <div class="photo">
           <div class="dot">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <a href="#"><img src="img/shop-item-1.png" width="240" height="240"></a>
+          <a href="#"><img src="img/shop-item-1.png" width="240" height="240" alt="Aviator"></a>
           <div class="dot">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <div class="price">
             <a href="#">Aviator</a>
@@ -101,11 +102,11 @@
         </div>
         <div class="photo">
           <div class="dot">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <a href="#"><img src="img/shop-item-2.png" width="240" height="240"></a>
+          <a href="#"><img src="img/shop-item-2.png" width="240" height="240" alt="Sunset"></a>
           <div class="price">
             <a href="#">Sunset</a>
             <p> Интернет-магазин<br>с личным кабинетом</p>
@@ -114,11 +115,11 @@
         </div>
         <div class="photo">
           <div class="dot">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <a href="#"><img src="img/shop-item-3.png" width="240" height="240"></a>
+          <a href="#"><img src="img/shop-item-3.png" width="240" height="240" alt="Forte"></a>
           <div class="price">
             <a href="#">Forte</a>
             <p> Отличный макет<br>для личного блога</p>
@@ -127,11 +128,11 @@
         </div>
         <div class="photo">
           <div class="dot">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <a href="#"><img src="img/shop-item-4.png" width="240" height="240"></a>
+          <a href="#"><img src="img/shop-item-4.png" width="240" height="240" alt="Modern organic thai"></a>
           <div class="price">
             <a href="#">Modern organic thai</a>
             <p> Сайт для ресторана<br>быстрого питания</p>
@@ -140,11 +141,11 @@
         </div>
         <div class="photo">
           <div class="dot">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <a href="#"><img src="img/shop-item-5.png" width="240" height="240"></a>
+          <a href="#"><img src="img/shop-item-5.png" width="240" height="240" alt="Avenue"></a>
           <div class="price">
             <a href="#">Avenue</a>
             <p> Макет для блога<br>о путешествиях</p>
@@ -153,11 +154,11 @@
         </div>
         <div class="photo">
           <div class="dot">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <a href="#"><img src="img/shop-item-6.png" width="240" height="240"></a>
+          <a href="#"><img src="img/shop-item-6.png" width="240" height="240" alt="Dovetail"></a>
           <div class="price">
             <a href="#">Dovetail</a>
             <p> Интернет-магазин<br>с галереей товаров</p>
@@ -165,28 +166,22 @@
           </div>
         </div>
       </div>
+      <div class="pagination clearfix">
+        <ul>
+          <li><a class="active" href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a class="next" href="#">Следующая</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <div class="pagination clearfix">
-      <ul>
-        <li><a class="active" href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a class="next" href="#">Следующая</a></li>
-      </ul>
-    </div>
   </div>
   </main>
 
   <footer class="main-footer">
-    <div class="map" id="map">
-      <div class="aside">
-        <h3>Nёrds design studio</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="btn-aside" href="#">Напишите нам</a>
-      </div>
-    </div>
+    <div class="map" id="map"></div>
     <div class="container">
       <div class="social clearfix">
         <div class="social-left">
@@ -198,6 +193,12 @@
           <h4>Давайте дружить, это выгодно!</h4>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
+      </div>
+      <div class="aside">
+        <h3>Nёrds design studio</h3>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn-aside" href="#">Напишите нам</a>
       </div>
     </div>
   </footer>
