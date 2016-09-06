@@ -335,7 +335,7 @@ h4 {
   display: inline-block;
   vertical-align: top;
   width: 230px;
-  margin-right: 60px;
+  margin-right: 64px;
 }
 .glukhanko img {
   padding-top: 67px;
@@ -357,6 +357,7 @@ h4 {
   margin-bottom: 85px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
+  font-size: 0;
 }
 .friends img {
   opacity: 0.2;
@@ -865,9 +866,10 @@ input[type="checkbox"]:not(checked) + label:hover::before {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  font-size: 0;
   margin: 0;
   margin-right: 80px;
-  margin-bottom: 75px;
+  margin-bottom: 70px;
   border-top: 30px solid #f1f1f1;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -891,22 +893,11 @@ input[type="checkbox"]:not(checked) + label:hover::before {
   text-align: center;
 }
 .dot span {
+  position: relative;
   display: inline-block;
   width: 3px;
   height: 3px;
-  margin: 0 2px;
-
-  vertical-align: top;
-
-  background: #ffffff;
-  border: 3px solid white;
-  border-radius: 50%;
-}
-.dot span::after {
-  display: inline-block;
-  width: 3px;
-  height: 3px;
-  margin: 0 2px;
+  margin: 0 4px;
 
   vertical-align: top;
 
