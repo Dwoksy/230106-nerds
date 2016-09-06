@@ -37,7 +37,7 @@ body {
   line-height: 22px;
   background: #ffffff;
   color: #283136;
-  min-width: 900px;
+  min-width: 980px;
 }
 b {
   font-size: 36px;
@@ -901,6 +901,28 @@ input[type="checkbox"]:not(checked) + label:hover::before {
 
   vertical-align: top;
 
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.dot span::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  right: 14px;
+  top: -3px;
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.dot span::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  left: 14px;
+  top: -3px;
   background: #ffffff;
   border: 3px solid white;
   border-radius: 50%;
