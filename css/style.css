@@ -599,19 +599,16 @@ footer .container {
 
 /* Каталог */
 
-
-.greeting {
+.catalog-main h1 {
+  display: block;
   background: #eeeeee;
   text-align: center;
-  padding: 0;
-  margin-bottom: 56px;
-  min-height: 229px;
-}
-.greeting h1 {
+  min-height: 134px;
   font-size: 40px;
   margin: 0;
   letter-spacing: -0.3px;
   margin-left: -32px;
+  margin-bottom: 56px;
   padding: 48px 0;
 }
 .catalog-main {
@@ -1155,7 +1152,7 @@ form .btn:active {
 .buy {
   font-size: 18px;
   border-radius: 3px;
-  padding: 7px 34px;
+  padding: 8px 34px;
   background-color: #fb565a;
 }
 .sprite {
