@@ -37,7 +37,7 @@ body {
   line-height: 22px;
   background: #ffffff;
   color: #283136;
-  min-width: 1280px;
+  min-width: 900px;
 }
 b {
   font-size: 36px;
@@ -101,7 +101,6 @@ h4 {
   margin-right: 45px;
   margin-left: -5px;
   vertical-align: top;
-
 }
 .main-nav li:last-child {
   margin-right: 0;
